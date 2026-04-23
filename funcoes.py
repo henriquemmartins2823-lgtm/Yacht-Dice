@@ -106,6 +106,15 @@ def calcula_pontos_quina(x):
         return 50
     else:
         return 0
+def calcula_pontos_regra_avancada(x):
+    dic_regras={}
+    dic_regras['cinco_iguais']=calcula_pontos_quina(x)
+    dic_regras['full_house']=calcula_pontos_full_house(x)
+    dic_regras['quadra']=calcula_pontos_quadra(x)
+    dic_regras['sem_combinacao']=calcula_pontos_soma(x)
+    dic_regras['sequencia_alta']=calcula_pontos_sequencia_alta(x)
+    dic_regras['sequencia_baixa']=calcula_pontos_sequencia_baixa(x)
+    return dic_regras
             
         
 
