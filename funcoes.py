@@ -37,6 +37,12 @@ def calcula_pontos_regra_simples(x):
             d=x.count(valor)
             dic[valor]=d*valor
     return dic
+def calcula_pontos_soma(x):
+    soma=0
+    for valores in x:
+        soma+=valores
+    return soma
+
 
 
 
