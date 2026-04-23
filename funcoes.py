@@ -57,6 +57,22 @@ def calcula_pontos_sequencia_baixa(x):
         return 15
     else:
         return 0
+def calcula_pontos_sequencia_alta(x):
+    combinacoes=[[1,2,3,4,5],[2,3,4,5,6]]
+    lista_validacao=[]
+    booleano=False
+    for lista in combinacoes:
+        for valores in lista:
+            if valores in x:
+                lista_validacao.append(valores)
+        if lista_validacao in combinacoes:
+            booleano=True
+        lista_validacao=[]
+    if booleano==True:
+        return 30
+    else:
+        return 0
+
 
 
                 
