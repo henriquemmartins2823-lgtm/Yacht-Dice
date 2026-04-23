@@ -72,6 +72,20 @@ def calcula_pontos_sequencia_alta(x):
         return 30
     else:
         return 0
+def calcula_pontos_full_house(x):
+    lista_valores=[]
+    soma=0
+    for valores in x:
+        if valores not in lista_valores:
+            lista_valores.append(valores)
+        soma+=valores
+    if x.count(lista_valores[0])==3 and x.count(lista_valores[1])==2:
+        return soma
+    elif x.count(lista_valores[0])==2 and x.count(lista_valores[1])==3:
+        return soma
+    else:
+        return 0
+        
 
 
 
