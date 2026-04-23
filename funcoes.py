@@ -89,11 +89,21 @@ def calcula_pontos_quadra(x):
     soma=0
     booleano=False
     for valores in x:
-        if x.count(valores)==4:
+        if x.count(valores)>=4:
             booleano=True
         soma+=valores
     if booleano==True:
         return soma
+    else:
+        return 0
+def calcula_pontos_quina(x):
+    booleano=False
+    lista_valores=[1,2,3,4,5,6]
+    for valores in lista_valores:
+        if x.count(valores)>=5:
+            booleano=True
+    if booleano==True:
+        return 50
     else:
         return 0
             
