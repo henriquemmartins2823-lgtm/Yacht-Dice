@@ -27,6 +27,17 @@ def remover_dado(rolado,estoque,remover):
     listafinal.append(listanovarolado1)
     listafinal.append(estoquenovo)
     return listafinal
+def calcula_pontos_regra_simples(x):
+    dic={}
+    valores=[1,2,3,4,5,6]
+    for valor in valores:
+        if valor not in x:
+            dic[valor]=0
+        else:
+            d=x.count(valor)
+            dic[valor]=d*valor
+    return dic
+
 
 
 
