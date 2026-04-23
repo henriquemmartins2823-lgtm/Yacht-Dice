@@ -85,6 +85,18 @@ def calcula_pontos_full_house(x):
         return soma
     else:
         return 0
+def calcula_pontos_quadra(x):
+    soma=0
+    booleano=False
+    for valores in x:
+        if x.count(valores)==4:
+            booleano=True
+        soma+=valores
+    if booleano==True:
+        return soma
+    else:
+        return 0
+            
         
 
 
